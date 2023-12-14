@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #212121;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+
+
+h1 {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#login {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(41, 41, 41);
+    width: 500px;
+    padding: 20px 20px 15px 20px;
+    border-radius: 9px;
+    border: 2px solid #fcc309dd;
+    box-shadow: 0px 0px 20px 4px rgba(237,182,0,0.40);   
+}
+
+.inputs p {
+    font-weight: bold;
+    color: white;
+}
+
+
+/*Agregar la información*/
+.inputs input {
+    margin-top: 9px;
+    margin-bottom: 35px;
+    height: 50px;
+    width: 300px;
+    padding-left: 10px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: rgb(203, 202, 202);
+    font-size: 16px;
+    transition:ease-out 400ms;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #fcc509;
+}
+
+.checkbox {
+    gap: 6px;
+    font-size: 15px;
+    width: 400px;
+    margin-top: -25px;
+    margin-bottom: 35px;
+}
+
+button {
+    padding: 15px 50px;
+    cursor: pointer;
+    color: white;
+    background-color: black;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    opacity: 0.5;
+    transition: 0.4s;
+
+}
+
+button:hover {
+    opacity: 1;
+}
+
+input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s;
+  }

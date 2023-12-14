@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Rubik&display=swap" rel="stylesheet">
+    <!-- Animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- Toastify (CSS) -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="login.css">
+    <!-- JavaScript -->
+    <script src="main.js" type="module"></script>
+    <title>StreamZone</title>
+</head>
+<body>
+    <div class="container animate__animated animate__fadeInDown">
+        <form id="login">
+            <div class="titulo-logo">
+                <img src="5.webp" alt="logo" width="50px">
+            <h1><i>StreamZone</i></h1>
+            </div>
+            <div class="inputs" >
+                <p>CORREO</p>
+                <input id="login-email" type="email" placeholder="user123@gmail.com" required>
+            </div>
+            <div class="inputs">
+                <p>CONTRASEÑA</p>
+                <input id="login-password" type="password" placeholder="*****" required>
+            </div>    
+            <div class="checkbox">
+                <input type="checkbox" onclick= "myFunction()"> Mostrar contraseña
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </form>    
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("login-password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+    <!-- Toastify (JS)-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
